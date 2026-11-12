@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Flash Facts launcher page.
+     Host this file and apple-touch-icon.png together (for example on GitHub Pages).
+     Paste your Apps Script web app link (the one ending in /exec) into APP_URL below. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flash Facts</title>
+<meta name="apple-mobile-web-app-title" content="Flash Facts">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#25998A">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="apple-touch-icon.png">
+<style>
+  html, body { margin: 0; height: 100%; background: #EEF5F8; overflow: hidden; }
+  iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; }
+</style>
+</head>
+<body>
+<iframe id="app" title="Flash Facts" allow="autoplay"></iframe>
+<script>
+  const APP_URL = 'PASTE_YOUR_WEB_APP_LINK_HERE';
+  document.getElementById('app').src = APP_URL;
+</script>
+</body>
+</html>
